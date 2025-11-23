@@ -1,0 +1,13 @@
+1. Media
+2. 
+@Override
+public int compareTo(Media other) {
+    int titleComp = this.title.compareToIgnoreCase(other.title);
+    if (titleComp != 0) {
+        return titleComp;
+    }
+    return Float.compare(other.cost, this.cost);
+}
+3. No
+4. Use public int compare and create 3 fields title , length and cost. Return 1 if title != 0 or length != 0 or cost != 0. Then we can print 
+as we want
